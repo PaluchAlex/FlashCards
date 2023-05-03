@@ -15,11 +15,156 @@ body{
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 
+
     /* Lined background */
     /* background-image: linear-gradient(#d1d5db 1px, transparent 0px);
     background-size: 100% 2em; */
 }
 
+a{
+    text-decoration: none;
+}
+
+/* Main menu */
+.button-menu {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-size: 40px;
+  height: 68px;
+  justify-content: center;
+  line-height: 24px;
+  /* max-width: 100%; */
+  width: 410px;
+  padding: 0 35px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 40px;
+}
+
+.button-menu:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 68px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-menu:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-menu:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-menu:hover {
+  outline: 0;
+}
+
+/* @media (min-width: 768px) {
+  .button-56 {
+    padding: 0 180px;
+  }
+} */
+
+.menu{
+    margin: auto;
+
+}
+/* main menu end */
+
+/* login/register */
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+#register-label{
+    margin-top: 8px;
+}
+
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.register-input{
+    margin-top: 0;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+.button-login{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#bottom-button{
+    margin-top: 0px;
+}
+
+/* login/ register end */
 footer{
     margin-top: auto;
 }
