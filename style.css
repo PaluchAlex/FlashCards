@@ -1,82 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html{
+html {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     text-align: center;
 }
 
-body{
-    
+body {
     min-height: 97vh;
     display: flex;
     flex-direction: column;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
 
 
     /* Lined background */
-    /* background-image: linear-gradient(#d1d5db 1px, transparent 0px);
-    background-size: 100% 2em; */
+
 }
 
-a{
+
+a {
     text-decoration: none;
 }
 
 /* Main menu */
 .button-menu {
-  align-items: center;
-  background-color: #fee6e3;
-  border: 2px solid #111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
-  cursor: pointer;
-  display: flex;
-  font-size: 40px;
-  height: 68px;
-  justify-content: center;
-  line-height: 24px;
-  /* max-width: 100%; */
-  width: 410px;
-  padding: 0 35px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin-bottom: 40px;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-size: 40px;
+    height: 68px;
+    justify-content: center;
+    line-height: 24px;
+    /* max-width: 100%; */
+    width: 410px;
+    padding: 0 35px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 40px;
 }
 
 .button-menu:after {
-  background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 68px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
-  z-index: -1;
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 68px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1 !important;
 }
 
 .button-menu:hover:after {
-  transform: translate(0, 0);
+    transform: translate(0, 0);
 }
 
 .button-menu:active {
-  background-color: #ffdeda;
-  outline: 0;
+    background-color: #ffdeda;
+    outline: 0;
 }
 
 .button-menu:hover {
-  outline: 0;
+    outline: 0;
 }
 
 /* @media (min-width: 768px) {
@@ -85,69 +87,89 @@ a{
   }
 } */
 
-.menu{
+.menu {
     margin: auto;
 
 }
+
 /* main menu end */
 
+/* account */
+.avatar-pic{
+    height: 400px;
+    width: auto;
+}
+
+.acc-table{
+    margin-bottom: -170px;
+}
+
+/* acc end */
+
 /* login/register */
-form{
+form {
+    position: relative;
     height: 520px;
     width: 400px;
-    background-color: rgba(255,255,255,0.13);
+    background-color: rgba(255, 255, 255, 0.13);
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
     padding: 50px 35px;
 }
-form *{
+
+form * {
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
 }
-form h3{
+
+form h3 {
     font-size: 32px;
     font-weight: 500;
     line-height: 42px;
     text-align: center;
 }
 
-label{
+label {
     display: block;
     margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
     text-align: left;
 }
-#register-label{
+
+#register-label {
     margin-top: 8px;
 }
 
-input{
+input {
     display: block;
     height: 50px;
     width: 100%;
-    background-color: rgba(255,255,255,0.07);
+    background-color: rgba(255, 255, 255, 0.07);
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
 }
-.register-input{
+
+.register-input {
     margin-top: 0;
 }
-::placeholder{
+
+::placeholder {
     color: #e5e5e5;
 }
-.button-login{
+
+.button-login {
     margin-top: 50px;
     width: 100%;
     background-color: #ffffff;
@@ -157,14 +179,105 @@ input{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-    
+
 }
 
-#bottom-button{
+#bottom-button {
     margin-top: 0px;
 }
 
+.half{
+    width: 50%;
+    margin: 0;
+}
+
+.gender-label{
+    display: inline-block;
+}
+.gender-div{
+    display: inline-block;
+    width: 30px;
+    margin: 0px 10px;
+}
+.gender-field{
+    display: inline-block;
+    position: absolute;
+    right: 45px;
+    bottom: 219px;
+}
+
+  
 /* login/ register end */
-footer{
+
+/* Learn section */
+.back-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+div {
+    position: relative;
+}
+
+.notebook {
+    background-color: whitesmoke;
+    background-image: linear-gradient(#d1d5db 1px, transparent 0px);
+    background-size: 100% 2em;
+    min-height: 480px;
+    width: 400px;
+    border: 1px solid #4CAF50;
+    margin: auto;
+    font-family: "Garamond", serif;
+
+}
+.notebook-hr{
+    border-width: 1px;
+    margin: 15px;
+}
+.card-heading {
+    margin: 2.5px;
+}
+h4{
+    font-size: 1.46rem;
+    font-weight: 300;
+    padding: 10px 0;
+    margin: 1px 17px;
+}
+#notebook-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#notebook-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #222222;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #notebook-btn:hover {
+    background-color: #E0E0E0;
+  }
+  
+.transparent{
+    visibility: hidden;
+}
+
+
+  .next-btn {
+    margin: 0 auto;
+  }
+
+/* learn section end */
+
+
+
+footer {
     margin-top: auto;
 }

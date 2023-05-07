@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,15 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <style>
-        body{ background-image: url("images/Login_Registration.png"); }
+        body {
+            background-image: url("images/Login_Registration.png");
+        }
     </style>
     <!-- favicon -->
     <link rel="icon" href="paper_favicon.ico" />
 
 </head>
+
 <body>
 
     <form>
@@ -25,8 +29,25 @@
         <label for="email" id="register-label">Email</label>
         <input type="text" class="register-input" placeholder="example@domain.com" id="username">
 
-        <label for="phone" id="register-label">Phone</label>
-        <input type="text" class="register-input" placeholder="07xx-xxx-xxx" id="email">
+        <label for="phone" class="half" id="register-label">Phone</label>
+        <input type="text" class="register-input half" placeholder="07xx-xxx-xxx" id="email">
+        <div class="gender-field">
+            <label for="sex" class="gender-label" id="register-label">Sex: </label>
+            <!-- <input type="checkbox" class="register-input" placeholder="sex" id="sex"> -->
+            <div class="gender-div">
+                <label class="gender-label" for="male">Male</label><br>
+                <input type="radio" id="m" name="sex" value="male">
+            </div>
+            <div class="gender-div">
+                <label class="gender-label" for="female">Lady</label><br>
+                <input type="radio" id="f" name="sex" value="female">
+            </div>
+            <div class="gender-div">
+                <label class="gender-label" for="other">Other</label><br>
+                <input type="radio" id="o" name="sex" value="other">
+            </div>
+        </div>
+
 
         <label for="password" id="register-label">Password</label>
         <input type="password" class="register-input" placeholder="Password" id="password">
@@ -36,9 +57,10 @@
     </form>
 
     <footer>
-        <p>Created by <a href="https://paluchalex.github.io/cv2.0/">Paluch Alex</a>  | All Rights Reserved</p>
+        <p>Created by <a href="https://paluchalex.github.io/cv2.0/">Paluch Alex</a> | All Rights Reserved</p>
     </footer>
 
-    
+
 </body>
+
 </html>

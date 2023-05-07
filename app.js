@@ -16,3 +16,4 @@ form.addEventListener("submit", function(e) {
     cards_list.push(form_info); 
     console.log(cards_list);
 })
+
