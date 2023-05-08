@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlashCards</title>
     <!-- css -->
     <link rel="stylesheet" href="../../style.css">
     <style>
@@ -20,17 +20,17 @@
 
 <body>
 
-    <form>
+    <form id="register-form">
         <h3>Register Here</h3>
 
         <label for="username" id="register-label">Username</label>
         <input type="text" class="register-input" placeholder="Username" id="username">
 
         <label for="email" id="register-label">Email</label>
-        <input type="text" class="register-input" placeholder="example@domain.com" id="username">
+        <input id="email" type="text" class="register-input" placeholder="example@domain.com">
 
-        <label for="phone" class="half" id="register-label">Phone</label>
-        <input type="text" class="register-input half" placeholder="07xx-xxx-xxx" id="email">
+        <label for="password" class="half" id="register-label">Password</label>
+        <input id="password" type="password" class="register-input half" placeholder="Password">
         <div class="gender-field">
             <label for="sex" class="gender-label" id="register-label">Sex: </label>
             <!-- <input type="checkbox" class="register-input" placeholder="sex" id="sex"> -->
@@ -49,10 +49,10 @@
         </div>
 
 
-        <label for="password" id="register-label">Password</label>
-        <input type="password" class="register-input" placeholder="Password" id="password">
+        <label for="confirm password" id="register-label"> Confirm Password</label>
+        <input id="confirm-password" type="password" class="register-input" placeholder="Confirm Password">
 
-        <button class="button-login">Register</button>
+        <button class="button-login" onclick="handleRegister()" type="button">Register</button>
 
     </form>
 
@@ -60,6 +60,11 @@
         <p>Created by <a href="https://paluchalex.github.io/cv2.0/">Paluch Alex</a> | All Rights Reserved</p>
     </footer>
 
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script src="/pages/register/register.js"></script>
 
 </body>
 

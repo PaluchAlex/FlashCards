@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlashCards</title>
     <!-- css -->
     <link rel="stylesheet" href="../../style.css">
     <style>
@@ -33,18 +33,18 @@
                 <th>Sex</th>
             </tr>
             <tr>
-                <td>Admin</td>
-                <td>Female</td>
+                <td id="username">Default</td>
+                <td id="sex">Other</td>
             </tr>
             <tr>
                 <th colspan="2">Email</th>
             </tr>
             <tr>
-                <td colspan="2">alexpasjoifdhi@gmail.com</td>
+                <td id="email" colspan="2">default@gmail.com</td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <img class="avatar-pic" src="../../images/default.png" alt="avatar">
+                    <img id="avatar-img" class="avatar-pic" src="../../images/default.png" alt="avatar">
                 </td>
             </tr>
         </table>
@@ -55,6 +55,11 @@
     <footer>
         <p>Created by <a href="https://paluchalex.github.io/cv2.0/">Paluch Alex</a> | All Rights Reserved</p>
     </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script src="/pages/account/account.js"></script>
 </body>
 
 </html>

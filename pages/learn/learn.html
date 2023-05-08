@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlashCards</title>
     <!-- css -->
     <link rel="stylesheet" href="../../style.css">
     <style>
@@ -24,18 +24,19 @@
 
     <div class="notebook">
         <h2 class="card-heading">Front</h2><br>
-        <h4>This is the tip of t..
+        <h4 id="front-content">This is the default card front
         </h4>
         <div class="hr-div">
             <hr class="notebook-hr">
 
         </div>
         <h2 class="card-heading">Back</h2><br>
-        <h4 id="back-content" class="transparent">content2!!!!!</h4>
+        <h4 id="back-content" class="transparent">This is the default card back</h4>
+        <!-- <button id="notebook-btn" class="bit-left" onclick="updateCard()" role="button">delete</button> -->
         <button id="notebook-btn" role="button">show</button>
     </div>
 
-    <button class="button-menu next-btn" role="button">Next Card</button>
+    <button class="button-menu next-btn" onclick="updateCard()" role="button">Next Card</button>
 
     
     <footer>
@@ -45,6 +46,6 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- JavaScript -->
-    <script src="learn.js"></script>
+    <script src="/pages/learn/learn.js"></script>
 </body>
 </html>

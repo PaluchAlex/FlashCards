@@ -95,12 +95,12 @@ a {
 /* main menu end */
 
 /* account */
-.avatar-pic{
+.avatar-pic {
     height: 400px;
     width: auto;
 }
 
-.acc-table{
+.acc-table {
     margin-bottom: -170px;
 }
 
@@ -186,31 +186,33 @@ input {
     margin-top: 0px;
 }
 
-.half{
+.half {
     width: 50%;
     margin: 0;
 }
 
-.gender-label{
+.gender-label {
     display: inline-block;
 }
-.gender-div{
+
+.gender-div {
     display: inline-block;
     width: 30px;
     margin: 0px 10px;
 }
-.gender-field{
+
+.gender-field {
     display: inline-block;
     position: absolute;
     right: 45px;
     bottom: 219px;
 }
 
-  
+
 /* login/ register end */
 
 /* Learn section */
-.back-btn{
+.back-btn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -220,7 +222,7 @@ div {
     position: relative;
 }
 
-.hr-div{
+.hr-div {
     padding-top: 108px;
 }
 
@@ -235,24 +237,29 @@ div {
     font-family: "Garamond", serif;
 
 }
-.notebook-hr{
+
+.notebook-hr {
     border-width: 1px;
     margin: 15px;
 }
+
 .card-heading {
     margin: 2.5px;
 }
-h4{
+
+h4 {
     font-size: 1.46rem;
     font-weight: 300;
     padding: 10px 0;
     margin: 1px 17px;
 }
+
 #notebook-btn {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
+
 #notebook-btn {
     font-size: 14px;
     padding: 8px 12px;
@@ -263,25 +270,48 @@ h4{
     color: #222222;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  #notebook-btn:hover {
+}
+
+#notebook-btn:hover {
     background-color: #E0E0E0;
-  }
-  
-.transparent{
-    visibility: hidden;
+}
+
+.transparent {
+    visibility: hidden !important;
 }
 
 
-  .next-btn {
+.next-btn {
     margin: 0 auto;
-  }
+}
+
+.bit-left {
+    right: 80px !important;
+}
 
 /* learn section end */
 
 
+/* search section */
 
+.post {
+    display: flex;
+    flex: row;
+}
+
+.post h2 {
+    margin-left: 20px;
+}
+
+#search {
+    width: 94%;
+}
+
+#search::placeholder {
+    color: black;
+}
+
+/* search section */
 footer {
     margin-top: auto;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlashCards</title>
     <!-- css -->
     <link rel="stylesheet" href="../../style.css">
     <style>
@@ -27,18 +27,18 @@
         </a>
     </div>
 
-    <form action="">
+    <form id="card-form">
 
 
         <h3>Add Card</h3>
 
         <label for="Front" id="register-label">Front</label>
-        <input type="text" name="Front of Card" class="" placeholder="Front of Card" id="front">
+        <input id="front" type="text" name="Front of Card" class="" placeholder="Front of Card" id="front">
 
         <label for="Back" id="register-label">Back</label>
-        <input type="text" name="Back of Card" class="card-back" placeholder="Back of Card" id="back">
+        <input id="back" type="text" name="Back of Card" class="card-back" placeholder="Back of Card" id="back">
 
-        <button class="button-login" type="submit">Add</button>
+        <button class="button-login" onclick="handleAddCard()" type="submit">Add</button>
     </form>
 
     <footer>
@@ -48,7 +48,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- JavaScript -->
-    <script src="app.js"></script>
+    <script src="/pages/edit/addcard.js"></script>
 </body>
 
 </html>

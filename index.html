@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlashCards</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <style>
@@ -16,16 +16,16 @@
 </head>
 <body>
 
-    <form>
+    <form id="login-form">
         <h3>Login Here</h3>
 
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" id="email">
 
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <button class="button-login">Log In</button>
+        <button class="button-login" onclick="handleLogin()" type="button">Log In</button>
         <p>OR</p>
         <button class="button-login" id="bottom-button" onclick="window.location.href='/pages/register/register.html'" type="button">Register</button> 
         <!-- redirect using JS -->
@@ -37,5 +37,9 @@
     </footer>
 
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script src="/app.js"></script>
 </body>
 </html>
