@@ -101,10 +101,21 @@ a {
     background-color: #ffdeda;
     outline: 0;
 }
+/* 
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+} */
 
 .button-menu:hover {
     outline: 0;
 }
+/* 
+.button-menu:disabled{
+    background-color: whitesmoke !important;
+} */
 
 /* @media (min-width: 768px) {
   .button-56 {

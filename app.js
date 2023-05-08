@@ -25,6 +25,12 @@ function handleLogin() {
   const email = loginForm.querySelector('input[id="email"]').value;
   const password = loginForm.querySelector('input[id="password"]').value;
 
+  if(email.includes("admin")){
+    window.localStorage.setItem("isAdmin", true);
+  } else {
+    window.localStorage.setItem("isAdmin", false);
+  }
+
   if (email === "") return alert("Email field is required!");
   if (password === "") return alert("Password field is required!");
 
